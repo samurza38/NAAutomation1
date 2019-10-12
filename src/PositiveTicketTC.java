@@ -18,6 +18,8 @@ public class PositiveTicketTC {
         driver.findElement(By.xpath("//input[contains(@type,'ema')]")).clear();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[starts-with(@type,'ema')]")).sendKeys("starts with ema");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[text()='Forgot account?']")).click();
 
 
         //this is browser method
