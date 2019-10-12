@@ -14,6 +14,10 @@ public class PositiveTicketTC {
         driver.findElement(By.xpath("//input[@type='email']")).clear();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[contains(@type,'ema')]")).sendKeys("contains ema");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[contains(@type,'ema')]")).clear();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[starts-with(@type,'ema')].sendKeys("starts with ema");
 
 
         //this is browser method
