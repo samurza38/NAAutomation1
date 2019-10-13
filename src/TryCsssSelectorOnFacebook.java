@@ -14,6 +14,6 @@ public class TryCsssSelectorOnFacebook {
         Thread.sleep(3000);
         driver.findElement(By.cssSelector("input#pass")).clear();
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[text()='Forgot account?']")).click();
+        driver.findElement(By.linkText("Forgot account?")).click();
     }
 }
