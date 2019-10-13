@@ -10,6 +10,16 @@ public class CssSelectorTest {
         driver.findElement(By.cssSelector("input#twotabsearchtextbox[type='text']")).sendKeys("computers");
         Thread.sleep(1000);
         driver.findElement(By.cssSelector("input.nav-input[type='submit']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector("input#twotabsearchtextbox[type='text']")).clear();
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector("input#twotabsearchtextbox")).sendKeys("books");
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector("input.nav-input")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector("#twotabsearchtextbox")).clear();
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector(".nav-a")).click();
 
     }
 
