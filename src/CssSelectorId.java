@@ -21,15 +21,21 @@ public class CssSelectorId {
             Thread.sleep(3000);
             driver.findElement(By.cssSelector("input#package-destination-hp-package")).sendKeys(Keys.ENTER);
             Thread.sleep(2000);
-            driver.findElement(By.cssSelector("input#package-departing-hp-package")).sendKeys("10/21/2019");
+            driver.findElement(By.cssSelector("input#package-departing-hp-package")).sendKeys("11/27/2019");
             Thread.sleep(2000);
-            driver.findElement(By.cssSelector("#package-returning-hp-package")).sendKeys(" ");
+            driver.findElement(By.cssSelector("#package-returning-hp-package")).sendKeys("11/30/2019");
             Thread.sleep(2000);
             driver.findElement(By.cssSelector("input#partialHotelBooking-hp-package")).click();
             Thread.sleep(2000);
-            driver.findElement(By.cssSelector("#package-checkin-hp-package")).sendKeys("  ");
+            driver.findElement(By.cssSelector("#package-checkin-hp-package")).sendKeys("11/27/2019");
             Thread.sleep(2000);
-            driver.findElement(By.cssSelector("input#package-checkout-hp-package")).sendKeys(" ");
+            driver.findElement(By.cssSelector("input#package-checkout-hp-package")).sendKeys("11/30/2019 ");
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector("select#package-advanced-preferred-class-hp-package")).click();
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector("select#package-advanced-preferred-class-hp-package")).sendKeys(Keys.ARROW_DOWN);
+            Thread.sleep(2000);
+            driver.findElement(By.cssSelector("select#package-advanced-preferred-class-hp-package")).sendKeys(Keys.ENTER);
             Thread.sleep(2000);
             driver.findElement(By.cssSelector("button#search-button-hp-package")).click();
 
