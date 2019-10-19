@@ -11,7 +11,7 @@ public class CheckBox {
         Thread.sleep(2000);
         System.out.println("is selected " + driver.findElement(By.cssSelector("input#partialHotelBooking-hp-package")).isSelected());
         Thread.sleep(2000);
-        //Thread.sleep(2000);
+
 
     }
 }
