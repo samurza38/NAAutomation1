@@ -11,7 +11,7 @@ public class Javascript {
         driver.findElement(By.cssSelector("input[type='button']")).click();
         Thread.sleep(2000);
         String expectedValue="Are you sure you want to give us the deed to your house?";
-        if (1==1){
+        if (expectedValue.contains(driver.switchTo().alert().getText())){
             Thread.sleep(2000);
             driver.switchTo().alert().accept();
         }
