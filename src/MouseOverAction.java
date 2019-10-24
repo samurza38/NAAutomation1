@@ -16,7 +16,7 @@ public class MouseOverAction {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         Actions MyMouse=new Actions(driver);
-        MyMouse.moveToElement(driver.findElement(By.xpath("//*[@id='nav-link-accountList']/spam[2]"))).build().perform();
+        MyMouse.moveToElement(driver.findElement(By.xpath("//*[@id='nav-link-accountList']/span[2]"))).build().perform();
         MyMouse.click();
     }
 }
