@@ -10,7 +10,7 @@ public class LinkTextLocator {
         sami.manage().window().maximize();
         sami.get("http://www.flypgs.com");
         sami.findElement(By.xpath("//*[@id='divHeaderCurrency']/div/div/div/div[1]/ul/li[5]/a")).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         sami.findElement(By.linkText("BİZE YAZIN")).click();
         Thread.sleep(5000);
         System.out.println("Validation"+isTextTrue(expectedValue));
